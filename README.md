@@ -1,6 +1,6 @@
 # hello-nvidia
 
-This repo holds my preparation for NVIDIA's Senior Content Engineer, KnowledgeOps role.
+This repo documents my first steps with Isaac Sim and its agent skills.
 
 **My goal:** to learn how agent skills and AI agents can help a newcomer experience Isaac Sim for the first time, using only NVIDIA's published skills.
 
