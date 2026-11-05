@@ -30,12 +30,9 @@ The skills work well for the setup they were built for: a browser on the same ma
 
 A small override file fixed the address problem. After that, an agent added a Jetbot and drove the robot, and I confirmed the move twice: from the position data, and with my own eyes in the browser.
 
-## What I haven't done yet
+## What's left to do
 
-- I haven't timed a repeat run from a fresh machine.
-- I saw two of the Brev CLI findings only once, so they need reproducing before anyone files them.
-- `hello-isaac-sim` is a spec, not a built skill.
-- The audit thresholds are starting points. The 1,024-character description limit comes from the Agent Skills format. The 20-skill soft cap is a rule of thumb.
+The full list, with the reason for each item, is in [TODO.md](TODO.md). In short: the scripts need tests, `hello-isaac-sim` needs building and evals, two Brev findings need reproducing, and no repeat run has been timed.
 
 ## How this repo is checked
 
