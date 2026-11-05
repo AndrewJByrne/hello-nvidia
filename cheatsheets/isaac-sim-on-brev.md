@@ -39,7 +39,7 @@ sudo apt-get update -qq && sudo apt-get install -y acl     # provides setfacl
 docker login nvcr.io       # username: $oauthtoken, password: NGC API key with the NGC Catalog scope
 ```
 
-## Launch
+## Launch Isaac Sim with the two addresses
 
 `docker-compose.public-ip.yml` is a compose override: a second file that Docker merges with the skill's own file. The override points the web viewer's `vite preview --host` and health check at `ISAACSIM_BIND_HOST`.
 
@@ -53,11 +53,11 @@ docker compose -p isim \
 
 Then open `http://<PUBLIC_IP>:8210` on the laptop, in one tab.
 
-## To drive a robot
+## Driving a robot needs a second override and a restart
 
 `isaac-sim-remote` needs the Python control server `isaacsim.code_editor.python_server` at `127.0.0.1:8226`, which the web viewer doesn't start. A second override, `docker-compose.python-server.yml`, turns the control server on and needs a restart.
 
-## Finish
+## Stop the machine when you're done
 
 ```bash
 brev stop <name>     # on the laptop

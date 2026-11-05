@@ -44,7 +44,7 @@ Every step answers a problem I hit in the [Brev write-up](../brev-first-simulati
 - **Missing prerequisite:** remove `acl`, and check that the skill reports the missing package before launch (criterion 3).
 - **Timing:** record the time from a fresh machine to a moving robot, with and without the skill. That first run sets the target. I haven't timed one yet, so I won't guess.
 
-## Risks
+## Risks: an open stream, a dependency on the address fix and closed contribution paths
 
 - The stream has no login or encryption, so the ports must be open to one IP only.
 - The skill depends on the address fix landing in `isaac-sim-web-viewer` first.

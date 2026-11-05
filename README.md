@@ -9,7 +9,7 @@ I answered that question in two parts:
 
 ![A Jetbot driving in Isaac Sim, streamed to a laptop browser](brev-first-simulation/screenshots/jetbot-closeup.png)
 
-## What's here
+## Each folder answers one part of the question
 
 | Folder | What you'll find |
 | --- | --- |
@@ -20,7 +20,7 @@ I answered that question in two parts:
 | [cheatsheets/](cheatsheets/) | Commands, ports and addresses on one page each |
 | [tools/](tools/) | The checks that CI runs on this repo |
 
-## The short version
+## The skills assume the browser is on the same network as Isaac Sim
 
 The skills work well for the setup they were built for: a browser on the same machine or the same local network as Isaac Sim. My setup was different, a laptop browser and a cloud GPU, and three gaps got in the way:
 
@@ -30,10 +30,10 @@ The skills work well for the setup they were built for: a browser on the same ma
 
 A small override file fixed the address problem. After that, an agent added a Jetbot and drove the robot, and I confirmed the move twice: from the position data, and with my own eyes in the browser.
 
-## What's left to do
+## Tests, evals and a built skill are still to do
 
 The full list, with the reason for each item, is in [TODO.md](TODO.md). In short: the scripts need tests, `hello-isaac-sim` needs building and evals, two Brev findings need reproducing, and no repeat run has been timed.
 
-## How this repo is checked
+## CI blocks broken links, broken Python and real IP addresses
 
 Every push runs [tools/check_repo.py](tools/check_repo.py) in GitHub Actions. The check fails if a relative link is broken, if a Python script doesn't compile, or if a real IP address slips into the docs. Addresses in the docs are placeholders such as `<PUBLIC_IP>`.

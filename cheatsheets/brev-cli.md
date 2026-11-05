@@ -18,7 +18,7 @@ brev refresh       # writes the SSH alias, so `ssh <name>` works
 | `--flex-ports` | You can open your own network ports, which the browser stream needs |
 | `--wide` | Shows the RAM and CPU columns, hidden by default (#13, #14) |
 
-## Watch out for
+## Surprises that cost me time
 
 - **Underscores are dropped from names without warning.** `ab_isaac_sim` became `abisaacsim` (#33).
 - **SSH before `brev refresh` fails with a DNS error,** not "machine not ready".
@@ -28,7 +28,7 @@ brev refresh       # writes the SSH alias, so `ssh <name>` works
 - **`brev delete` doesn't ask for confirmation** (#9).
 - **Don't install a second VPN such as Tailscale.** Tailscale and Brev's own NetBird network both use 100.64.0.0/10, and the clash broke SSH (#27).
 
-## Stop paying
+## Stop the machine to stop the billing
 
 ```bash
 brev stop <name>     # about $2.71 an hour while running; my notes recorded $0.02 an hour stopped (#26)
