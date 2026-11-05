@@ -50,6 +50,8 @@ Below those seven, the headings scatter. Some differ only in casing, such as "Re
 
 **Open questions.** I didn't find evals for the skills in the `skills/` folder, though I didn't search everywhere they might live. I also didn't see a way to mark a skill as beginner or advanced, or a pointer to where a newcomer should start. Both may exist in places I didn't look.
 
+**Upstream fix.** The decision-tree diagram in `isaac-sim-validator` fails to render on GitHub. I reproduced it, confirmed a fix, and filed [isaac-sim/IsaacSim#923](https://github.com/isaac-sim/IsaacSim/issues/923).
+
 ## How far to trust these numbers
 
 - The counts come from the scripts, and you can rerun them with the commands above.

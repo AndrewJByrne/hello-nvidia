@@ -257,7 +257,7 @@ The skills work well for the setup they assume: a browser on the same machine as
 - It found the root cause on its own, proposed the smallest fix (an override file outside the skill's own files), and showed me the change before applying it.
 - It checked its work with data (the robot's position) and said plainly that it couldn't see the stream itself.
 
-**Why the gap might exist (my guesses, worth asking about in the interview)**
+**Why the gap might exist (my guesses, worth checking with the maintainers)**
 
 - The skills are organised around capabilities (sensors, physics, the viewer), so first-time setup may not have a single owner.
 - First-time setup spans Brev, NGC, AWS networking, Docker and the skills. Who owns the handoffs between them is a question I'd ask, not something I know.
@@ -292,9 +292,9 @@ Where to file them: the IsaacSim repo's [contribution guide](https://github.com/
 - [ ] Propose the address fix in a GitHub Discussion, with the override file as the worked example. I first planned a pull request, but the [contribution path policy](https://github.com/isaac-sim/IsaacSim/blob/release/6.3/CONTRIBUTING_PATHS.md) only accepts outside changes to source files under `source/extensions/`, so a change to `skills/` has to come from a maintainer. Outside pull requests also target `develop`, not a release branch.
 - [ ] Draft `hello-isaac-sim` for one setup (everyday laptop + Brev L40S), plus its Getting started route in `SKILLS.md`. This is the missing path from zero to a working demo.
 - [ ] Time a fresh run from a new machine to a moving robot, first with the fix in place and then with `hello-isaac-sim`. Those two numbers show how much the skill actually saves, and give it a real target.
-- [ ] Save the scene and driving script, and record a short video of the Jetbot. Then I can show the result in the interview without a running machine.
+- [ ] Save the scene and driving script, and record a short video of the Jetbot. Then I can show the result without a running machine.
 - [ ] Try a second demo, such as a figure-eight or following a cube, to see how far the skills go beyond driving forward.
-- [ ] Prepare two interview questions: who owns first-time setup across Brev, NGC and the skills, and how skills are tested on cloud setups. The answers decide where these fixes should go.
+- [ ] Ask the maintainers two questions: who owns first-time setup across Brev, NGC and the skills, and how skills are tested on cloud setups. The answers decide where these fixes should go.
 
 ## Appendix: full friction log, #1 to #43
 
