@@ -1,0 +1,48 @@
+Skill Name                                 | Chars  | Status
+--------------------------------------------------------------
+isaac-sim-assets                           | 334    | OK
+isaac-sim-installation                     | 196    | OK
+physx-to-newton-conversion                 | 194    | OK
+action-and-event-data-generation           | 193    | OK
+isaac-sim-orchestrator                     | 192    | OK
+behavior-tree-generation                   | 189    | OK
+vlm-scene-captioning                       | 187    | OK
+generate-incident-config                   | 180    | OK
+isaac-sim-ros-workspaces                   | 180    | OK
+run-incident-events                        | 180    | OK
+isaac-sim-robot-navigation                 | 175    | OK
+isaac-sim-workflow                         | 175    | OK
+motion-generation                          | 173    | OK
+place-camera-aim-at                        | 168    | OK
+skill-distillation                         | 168    | OK
+place-camera-max-coverage                  | 165    | OK
+actor-sdg-sweep-config                     | 164    | OK
+actor-sdg-generate-lighting-variations     | 163    | OK
+data-collection-sim                        | 163    | OK
+isaac-sim-remote                           | 160    | OK
+calibrate-metropolis-camera                | 157    | OK
+meta-skills                                | 151    | OK
+object-bin-packing                         | 150    | OK
+isaac-sim-validator                        | 147    | OK
+navigation-primitives                      | 147    | OK
+isaac-sim-headless-deployment              | 144    | OK
+isaac-sim-web-viewer                       | 144    | OK
+isaac-sim-migration                        | 137    | OK
+profile-isaac-sim                          | 130    | OK
+manipulation-ik                            | 128    | OK
+occupancy-map                              | 127    | OK
+usd-composition-architecture               | 121    | OK
+spatial-reasoning                          | 120    | OK
+isaac-sim-rendering                        | 119    | OK
+usd-pipeline                               | 119    | OK
+isaac-sim-ros2-bridge                      | 117    | OK
+validation-diff-gifs                       | 117    | OK
+isaac-sim-sensor                           | 112    | OK
+physics-simulation                         | 112    | OK
+isaac-camera                               | 107    | OK
+mobility-gen                               | 105    | OK
+usd-articulation                           | 105    | OK
+isaac-sim-troubleshooting                  | 100    | OK
+urdf-mjcf-to-usd-conversion                | 97     | OK
+--------------------------------------------------------------
+Total: 44 | Over 1024 chars: 0

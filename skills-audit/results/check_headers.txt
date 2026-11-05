@@ -1,0 +1,335 @@
+Total skills: 44
+
+H2 Header                                | Count | %     
+-------------------------------------------------------
+Purpose                                  | 44    | 100.0%
+Limitations                              | 43    |  97.7%
+Troubleshooting                          | 43    |  97.7%
+Prerequisites                            | 42    |  95.5%
+Running scripts                          | 31    |  70.5%
+Available Scripts                        | 29    |  65.9%
+Workflow                                 | 12    |  27.3%
+Related skills                           | 6     |  13.6%
+When to use this skill                   | 5     |  11.4%
+Related Skills                           | 5     |  11.4%
+When to use                              | 5     |  11.4%
+Calling the API directly                 | 4     |   9.1%
+Security                                 | 3     |   6.8%
+When to use (vs siblings)                | 3     |   6.8%
+Environment                              | 3     |   6.8%
+Verify it worked                         | 3     |   6.8%
+Integration points                       | 3     |   6.8%
+Examples                                 | 3     |   6.8%
+Instructions                             | 3     |   6.8%
+Integration Points                       | 3     |   6.8%
+Architecture                             | 2     |   4.5%
+Safety rules                             | 2     |   4.5%
+References                               | 2     |   4.5%
+Look-At Camera Math                      | 2     |   4.5%
+Read These Skills First                  | 2     |   4.5%
+When To Use This Skill (vs siblings)     | 2     |   4.5%
+Failure Modes & Recovery                 | 2     |   4.5%
+Core Concepts                            | 2     |   4.5%
+How the algorithm works                  | 2     |   4.5%
+The stack                                | 1     |   2.3%
+How the stages compose                   | 1     |   2.3%
+ISP is optional: IRA places cameras from its own config | 1     |   2.3%
+I want to… → use this                    | 1     |   2.3%
+Launch                                   | 1     |   2.3%
+Version rules (read before authoring any config) | 1     |   2.3%
+Env vars expand in the shell, not in YAML | 1     |   2.3%
+Cost                                     | 1     |   2.3%
+Product documentation                    | 1     |   2.3%
+Sweep specification                      | 1     |   2.3%
+Extensions                               | 1     |   2.3%
+Run (UI)                                 | 1     |   2.3%
+Run (scripted API)                       | 1     |   2.3%
+Required inputs (minimum)                | 1     |   2.3%
+The pipeline                             | 1     |   2.3%
+Required Imports                         | 1     |   2.3%
+Writers                                  | 1     |   2.3%
+Annotators                               | 1     |   2.3%
+Minimal Pipeline                         | 1     |   2.3%
+Full warehouse pipeline                  | 1     |   2.3%
+Domain Randomization                     | 1     |   2.3%
+Headless Execution                       | 1     |   2.3%
+Configuration Pattern                    | 1     |   2.3%
+Validation Checklist                     | 1     |   2.3%
+Key Rules                                | 1     |   2.3%
+Sibling SDG workflows                    | 1     |   2.3%
+Reference examples                       | 1     |   2.3%
+Config anatomy                           | 1     |   2.3%
+Validation modes                         | 1     |   2.3%
+Editing an existing config by hand       | 1     |   2.3%
+Fundamentals                             | 1     |   2.3%
+Creating and capturing — RtxCamera + CameraSensor | 1     |   2.3%
+Animation                                | 1     |   2.3%
+Replicator randomization                 | 1     |   2.3%
+Sensor checker / supported configs       | 1     |   2.3%
+Migration from `isaacsim.sensors.camera.Camera` | 1     |   2.3%
+Source of truth                          | 1     |   2.3%
+Boundaries                               | 1     |   2.3%
+Launch modes                             | 1     |   2.3%
+Key CLI Flags                            | 1     |   2.3%
+App Configurations                       | 1     |   2.3%
+CI Physics-Only Nightly Runs             | 1     |   2.3%
+Batch Simulation Pattern                 | 1     |   2.3%
+Performance Tuning for Batch/Headless    | 1     |   2.3%
+Known Issues (Kit 110)                   | 1     |   2.3%
+Installation-only boundary               | 1     |   2.3%
+Installation-method prompt               | 1     |   2.3%
+Platform support                         | 1     |   2.3%
+Scripts                                  | 1     |   2.3%
+Deprecation Warnings                     | 1     |   2.3%
+Migrating Across Releases                | 1     |   2.3%
+Specialist ownership                     | 1     |   2.3%
+Environment contract                     | 1     |   2.3%
+Execution mode                           | 1     |   2.3%
+Task decomposition                       | 1     |   2.3%
+Sub-agent rules                          | 1     |   2.3%
+Routed skills                            | 1     |   2.3%
+Multi-robot fleet reference              | 1     |   2.3%
+Workflow: multi-robot sim                | 1     |   2.3%
+Workflow: Physical AI end-to-end pipeline | 1     |   2.3%
+Debug protocol                           | 1     |   2.3%
+Operating rules                          | 1     |   2.3%
+Launching Isaac Sim                      | 1     |   2.3%
+Important Notes                          | 1     |   2.3%
+Read first                               | 1     |   2.3%
+Capture: SimulationApp + Replicator RGB Annotator | 1     |   2.3%
+RT2 vs PathTracing                       | 1     |   2.3%
+Headless Lighting — Add Explicit Lights  | 1     |   2.3%
+ACES Tone Mapping — The Single Biggest Quality Lever | 1     |   2.3%
+Warehouse Lighting Recipe (proven 7/10 → 9/10) | 1     |   2.3%
+Deep-Aisle Indoor Lighting               | 1     |   2.3%
+Frame Quality Validation                 | 1     |   2.3%
+Dynamic Camera Height (Obstacle Avoidance) | 1     |   2.3%
+Robot XformOp Discipline                 | 1     |   2.3%
+Video Assembly                           | 1     |   2.3%
+Session Management                       | 1     |   2.3%
+Checklist Before Delivering Renders      | 1     |   2.3%
+Runtime APIs                             | 1     |   2.3%
+Physics Simulation on Kit 110 (CRITICAL) | 1     |   2.3%
+Kit 110 Exec Model (CRITICAL — 2026-03-15) | 1     |   2.3%
+Camera Chase Cam                         | 1     |   2.3%
+Supported configurations                 | 1     |   2.3%
+Critical Docker distinction              | 1     |   2.3%
+Routing                                  | 1     |   2.3%
+Existing checkout policy                 | 1     |   2.3%
+Source built artifacts                   | 1     |   2.3%
+OmniGraph ROS 2 Nodes                    | 1     |   2.3%
+Setting Up a ROS 2 Bridge Graph (Python) | 1     |   2.3%
+Multi-Robot Namespacing                  | 1     |   2.3%
+Nav2 Integration                         | 1     |   2.3%
+Known Issues (Isaac Sim 6.0 rc.22)       | 1     |   2.3%
+Sample Scenes                            | 1     |   2.3%
+0. Vendor sensor catalog (`SUPPORTED_LIDAR_CONFIGS`) | 1     |   2.3%
+0.1 Attaching a vendor sensor to a robot mount | 1     |   2.3%
+0.2 Custom scan patterns (USDA emitter-state arrays) | 1     |   2.3%
+1. Camera (multi-AOV capture)            | 1     |   2.3%
+2. Lidar (RTX) — Writer-based GMO consumption | 1     |   2.3%
+3. Radar (RTX)                           | 1     |   2.3%
+4. Acoustic (RTX, ultrasonic)            | 1     |   2.3%
+5. IMU (physics)                         | 1     |   2.3%
+6. Contact / force (physics)             | 1     |   2.3%
+7. Replicator domain randomization       | 1     |   2.3%
+8. Writers                               | 1     |   2.3%
+9. Workflows                             | 1     |   2.3%
+Gotchas                                  | 1     |   2.3%
+Standalone library diagnosis             | 1     |   2.3%
+Quick Diagnosis Flowchart                | 1     |   2.3%
+Section 1: Startup Hangs                 | 1     |   2.3%
+Section 1a: Shutdown Hangs (Kit Framework Deadlock) | 1     |   2.3%
+Section 2: Stage Loading Hangs           | 1     |   2.3%
+Section 3: Shader/MDL Compilation        | 1     |   2.3%
+Section 4: Physics Hangs                 | 1     |   2.3%
+Section 5: Replicator Hangs              | 1     |   2.3%
+Section 6: Rendering (Hydra) Hangs       | 1     |   2.3%
+Section 7: Nucleus Network Hangs         | 1     |   2.3%
+Section 8: Memory Issues                 | 1     |   2.3%
+Section 9: Performance Optimization      | 1     |   2.3%
+Kit-only validation helper               | 1     |   2.3%
+Kit simulation checklist                 | 1     |   2.3%
+File structure validation (USD scenes)   | 1     |   2.3%
+Render validation (frame analysis)       | 1     |   2.3%
+Video validation                         | 1     |   2.3%
+RL training validation                   | 1     |   2.3%
+Asset & shell validation                 | 1     |   2.3%
+Kit decision tree                        | 1     |   2.3%
+Training output                          | 1     |   2.3%
+Reply format                             | 1     |   2.3%
+Input sources                            | 1     |   2.3%
+Automated validation                     | 1     |   2.3%
+Feedback loop                            | 1     |   2.3%
+Permitted downloads and licenses         | 1     |   2.3%
+Prebuilt-image only                      | 1     |   2.3%
+Resolve latest NGC tag (mandatory)       | 1     |   2.3%
+Pull image first (mandatory, after EULA) | 1     |   2.3%
+NGC credentials (mandatory)              | 1     |   2.3%
+Which URL to open (mandatory)            | 1     |   2.3%
+Required output                          | 1     |   2.3%
+Web viewer URL                           | 1     |   2.3%
+Classify the deliverable                 | 1     |   2.3%
+Consensus Questions                      | 1     |   2.3%
+Define acceptance criteria               | 1     |   2.3%
+Integrity rules                          | 1     |   2.3%
+Working practices                        | 1     |   2.3%
+Route implementation work                | 1     |   2.3%
+Library versus Kit route                 | 1     |   2.3%
+Pick the right IK stack                  | 1     |   2.3%
+Kit example files                        | 1     |   2.3%
+Docs references                          | 1     |   2.3%
+Differential IK pattern (modern `Articulation`) | 1     |   2.3%
+Schema-native IK + Named Poses (RobotPoser) | 1     |   2.3%
+Obstacle-aware motion controllers        | 1     |   2.3%
+Grasp frame discovery (do this first)    | 1     |   2.3%
+Grasping                                 | 1     |   2.3%
+Grasp validation (feedback loop)         | 1     |   2.3%
+Rules                                    | 1     |   2.3%
+Lessons (2026-04-08)                     | 1     |   2.3%
+Structuring a new skill                  | 1     |   2.3%
+Capturing authoring lessons              | 1     |   2.3%
+1. Skill Routing                         | 1     |   2.3%
+2. Chunked Processing                    | 1     |   2.3%
+3. Quality Gates (from Collaboration / LLM Review) | 1     |   2.3%
+4. Safety Rails for Autonomous Modification (from AI Advisor) | 1     |   2.3%
+5. Multi-Skill Composition (from Warehouse Builder) | 1     |   2.3%
+6. Fleet Orchestration (from Training Ops + PBT) | 1     |   2.3%
+7. Progressive Disclosure (from Multiple Skills) | 1     |   2.3%
+9. Separation of Concerns — Three-File Pattern | 1     |   2.3%
+10. Code-as-Reference, Not Code-as-Skill | 1     |   2.3%
+11. Description Budget — 1024 Chars Is Not Aspirational | 1     |   2.3%
+12. When to Split vs Merge vs Cross-Link | 1     |   2.3%
+13. Hierarchy with Routing, Quality Gates, and Distill-Before-Deliver | 1     |   2.3%
+14. Environment Variables, Not User Paths | 1     |   2.3%
+When to Use MSF                          | 1     |   2.3%
+The Five Phases                          | 1     |   2.3%
+Skill Hierarchy Pattern                  | 1     |   2.3%
+SKILL.md Template                        | 1     |   2.3%
+When to Use This Skill                   | 1     |   2.3%
+Related / Integration Points             | 1     |   2.3%
+Key Workflows                            | 1     |   2.3%
+Decision Trees                           | 1     |   2.3%
+Expert Intuition                         | 1     |   2.3%
+Context Matrix                           | 1     |   2.3%
+Environment Requirements                 | 1     |   2.3%
+Iteration Log                            | 1     |   2.3%
+Cold-Start Expertise Patterns            | 1     |   2.3%
+Anti-Patterns                            | 1     |   2.3%
+Session Start Protocol                   | 1     |   2.3%
+Extension Loading (Critical)             | 1     |   2.3%
+Phase 1: Automated Trajectory Recording (Headless) | 1     |   2.3%
+Phase 2: Replay & Render                 | 1     |   2.3%
+Available Robots                         | 1     |   2.3%
+Available Scenarios                      | 1     |   2.3%
+Add a Custom Robot                       | 1     |   2.3%
+Config / Data Format                     | 1     |   2.3%
+Common Pitfalls                          | 1     |   2.3%
+Skill selection and invocation           | 1     |   2.3%
+Ownership and execution routes           | 1     |   2.3%
+Scope Rules                              | 1     |   2.3%
+References And Helpers                   | 1     |   2.3%
+Controller wiring (quick rules)          | 1     |   2.3%
+Mobile-Base Controller Pattern           | 1     |   2.3%
+Frame Discipline                         | 1     |   2.3%
+Canonical Sources                        | 1     |   2.3%
+Shared NVIDIA APIs                       | 1     |   2.3%
+Robot Footprints & Z-Offsets — Derived at Runtime | 1     |   2.3%
+Occupancy Map from USD (Direct Projection) | 1     |   2.3%
+A* Path Planning                         | 1     |   2.3%
+Kinematics Helpers                       | 1     |   2.3%
+Differential Drive Kinematics            | 1     |   2.3%
+Holonomic / Mecanum (Kaya, AMR)          | 1     |   2.3%
+DifferentialController + Articulation (Kit 110) | 1     |   2.3%
+Ackermann / Bicycle Kinematics           | 1     |   2.3%
+World Transform Extraction               | 1     |   2.3%
+Look-At Chase Camera (MANDATORY pattern) | 1     |   2.3%
+Common Gotchas (shared across all navigation skills) | 1     |   2.3%
+Specialization Skills (read after this one) | 1     |   2.3%
+Available scripts                        | 1     |   2.3%
+The `bin_pack` harmonizer                | 1     |   2.3%
+Run (headless)                           | 1     |   2.3%
+Automatic Fallback (recommended entry point) | 1     |   2.3%
+Path 1 (recommended): `isaacsim.asset.gen.omap` extension | 1     |   2.3%
+Path 2 (fallback): direct USD projection | 1     |   2.3%
+Key Design Decisions                     | 1     |   2.3%
+Isaac Sim OccupancyMap Class             | 1     |   2.3%
+Coordinate Conventions                   | 1     |   2.3%
+Standalone library versus Kit adapter    | 1     |   2.3%
+Backend selection (Kit 110)              | 1     |   2.3%
+Stack & reading order                    | 1     |   2.3%
+Part 1 — Scene-Level Configuration       | 1     |   2.3%
+Part 2 — Per-Prim Physics Setup          | 1     |   2.3%
+Part 3 — Contact Materials               | 1     |   2.3%
+Part 4 — Joint Drives                    | 1     |   2.3%
+Part 5 — Backend Selection (Newton vs PhysX) | 1     |   2.3%
+Part 6 — Physics Sensors                 | 1     |   2.3%
+Part 7 — Physics-to-USD Readback (CRITICAL) | 1     |   2.3%
+Part 8 — Common Gotchas                  | 1     |   2.3%
+Worked Examples (impact, vibratory feeder, gyro, cradle, escapement) | 1     |   2.3%
+Step 1 — Validate User Request           | 1     |   2.3%
+Step 2 — Run Benchmark + Capture Tracy Profile + CSV | 1     |   2.3%
+Step 3 — Compare CSVs and Analyze        | 1     |   2.3%
+Step 4 — Iterate                         | 1     |   2.3%
+Profiling Extension Unit Tests           | 1     |   2.3%
+Guidelines                               | 1     |   2.3%
+How the pieces fit                       | 1     |   2.3%
+When to run                              | 1     |   2.3%
+Loop                                     | 1     |   2.3%
+What good distillation looks like        | 1     |   2.3%
+The Generalization Rule                  | 1     |   2.3%
+Integration with Orchestrator            | 1     |   2.3%
+Anti-patterns                            | 1     |   2.3%
+Code in Skills — Reference, Don't Embed  | 1     |   2.3%
+Library-Health Check (Run During Distillation) | 1     |   2.3%
+Cadence                                  | 1     |   2.3%
+Draft Skills — High Priority Iteration   | 1     |   2.3%
+Coordinate System                        | 1     |   2.3%
+metersPerUnit Conversion (CRITICAL)      | 1     |   2.3%
+Transform Matrix Order (CRITICAL)        | 1     |   2.3%
+Placement Helper                         | 1     |   2.3%
+Grid Layout                              | 1     |   2.3%
+Baked Waypoint Animation                 | 1     |   2.3%
+Zone Boundary Check                      | 1     |   2.3%
+Shell vs Interior Coordinate Alignment (CRITICAL) | 1     |   2.3%
+Render File Size Validation              | 1     |   2.3%
+KION Asset Scale Map (CRITICAL — 2026-03-14) | 1     |   2.3%
+Common Gotchas                           | 1     |   2.3%
+Lessons Learned — GSRC Integration (2026-03-12) | 1     |   2.3%
+Advanced Topics                          | 1     |   2.3%
+Importer, library, and Kit extension ownership | 1     |   2.3%
+XACRO inputs                             | 1     |   2.3%
+Path 1 — Isaac Sim importer (recommended for RL/Lab) | 1     |   2.3%
+Path 2 — Isaac Lab `convert_urdf.py` / `convert_mjcf.py` (config.yaml) | 1     |   2.3%
+URDF export (USD -> URDF round-trip)     | 1     |   2.3%
+Common pitfalls                          | 1     |   2.3%
+Wheel ownership                          | 1     |   2.3%
+Schema authoring versus runtime interaction | 1     |   2.3%
+Multi-arm assembly (correct pattern)     | 1     |   2.3%
+Robot Schema overlay (Kit 110)           | 1     |   2.3%
+Validation checklist                     | 1     |   2.3%
+Validation snippet (self-contained)      | 1     |   2.3%
+Common failures                          | 1     |   2.3%
+Composition execution routes             | 1     |   2.3%
+Core Concept: One Binary Crate, Many USDA Layers | 1     |   2.3%
+File Format Decision Guide               | 1     |   2.3%
+Producing This Structure: Asset Transformer | 1     |   2.3%
+Physics USDA Schema                      | 1     |   2.3%
+Headless RL Optimization: Skip Appearance | 1     |   2.3%
+Composition Arc Precedence               | 1     |   2.3%
+Common Debugging                         | 1     |   2.3%
+Standalone USD versus live Kit stage     | 1     |   2.3%
+Phase 1: Asset Discovery & Measurement   | 1     |   2.3%
+Phase 2: Shader Compatibility Check      | 1     |   2.3%
+Phase 3: Placeholder-to-Asset Mapping    | 1     |   2.3%
+Phase 4: Placement Script Pattern        | 1     |   2.3%
+Phase 5: Animation & Articulation        | 1     |   2.3%
+Phase 6: Validation                      | 1     |   2.3%
+Hard-Won Lessons                         | 1     |   2.3%
+Paths                                    | 1     |   2.3%
+Usage                                    | 1     |   2.3%
+Output                                   | 1     |   2.3%
+SDG Golden-Set Tolerance Diffs           | 1     |   2.3%
+Interpreting results                     | 1     |   2.3%
+How it works                             | 1     |   2.3%
+Three ways to run                        | 1     |   2.3%

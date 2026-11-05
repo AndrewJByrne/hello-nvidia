@@ -1,0 +1,29 @@
+
+================ SKILL SUITE AUDIT REPORT ================
+
+[*] Total Skills Detected: 44
+  [WARN] 44 skills found. Exceeds soft cap (20).
+         The cap is a rule of thumb. Consider grouping skills behind routers.
+
+[*] Description Length & Token Budget Check (Cap: 1024 chars):
+  [PASS] All skill descriptions within the 1024-character limit.
+
+[*] Argument Complexity Check (Max 5 required properties):
+  [PASS] No skills exceed argument complexity ceilings (or defined externally).
+
+[*] Dynamic / Volatile Data Leaks in Descriptions:
+  [PASS] Descriptions appear static and free of runtime session data.
+
+[*] Exclusionary Phrasing Boundary Check:
+  [INFO] 21/44 skills lack explicit negative boundaries ('DO NOT use for...'):
+         (Consider adding negative criteria to prevent false triggers, e.g., in action-and-event-data-generation, behavior-tree-generation, calibrate-metropolis-camera, isaac-camera, isaac-sim-headless-deployment...)
+
+[*] Potential Trigger & Scope Collision Matrix:
+  [WARN] Detected 2 pairs with high description keyword overlap:
+         - generate-incident-config <--> run-incident-events
+           Shared: author, config, drive, fire, incident
+         - navigation-primitives <--> occupancy-map
+           Shared: export, footprints, kinematics, navigation, occupancy
+
+==========================================================
+

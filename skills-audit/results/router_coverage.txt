@@ -1,0 +1,8 @@
+Skills (folders with a SKILL.md): 44
+Skills linked from SKILLS.md:     44
+Skills not linked from SKILLS.md: 0
+
+Linked from more than one route:
+  2 isaac-sim-orchestrator/SKILL.md
+  2 isaac-sim-troubleshooting/SKILL.md
+  2 isaac-sim-validator/SKILL.md
