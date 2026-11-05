@@ -4,7 +4,7 @@ This repo holds my preparation for NVIDIA's Senior Content Engineer, KnowledgeOp
 
 I answered that question in two parts:
 
-1. **I measured the skills as a content set before using them.** I wrote short Python scripts that check how the `SKILLS.md` router covers the 44 skills, count every H2 heading, measure the descriptions, and lint the set against agent-facing practices.
+1. **I measured the skills as a content set before using them.** Working with an AI agent (Gemini), I produced short Python scripts that check how the `SKILLS.md` router covers the 44 skills, count every H2 heading, measure the descriptions, and lint the set against agent-facing practices. The agent wrote the code. I decided what to measure, ran the scripts, and checked the results.
 2. **I used the skills the way a newcomer would.** My done test was Isaac Sim running on a Brev cloud GPU, streaming to my laptop's browser, with a robot visibly driving. I logged every point of friction along the way.
 
 ![A Jetbot driving in Isaac Sim, streamed to a laptop browser](brev-first-simulation/screenshots/jetbot-closeup.png)

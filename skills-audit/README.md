@@ -4,6 +4,10 @@ Before using any skill, I wanted to know what I was looking at. How many skills 
 
 The skills live in the `skills/` folder of the [isaac-sim/IsaacSim](https://github.com/isaac-sim/IsaacSim/tree/release/6.3/skills) repository. `SKILLS.md` in that folder is the router: the page an agent reads to decide which skill fits a request.
 
+## How the scripts were made
+
+I didn't write these scripts by hand. I worked with an AI agent (Gemini): I asked the questions above, the agent wrote the code, and I ran the scripts against the skills and checked the output. For this repo, the scripts were tidied to take the skills folder as an argument, and each one got a header that says what it checks.
+
 ## Run the scripts yourself
 
 ```bash
@@ -51,7 +55,9 @@ After those, the headings fragment. Some differ only in casing, such as "Related
 - The counts come from the scripts, and anyone can rerun them.
 - The linter's thresholds are starting points, not standards. The 20-skill soft cap is a rule of thumb. The six-shared-keywords collision threshold has not been tuned.
 - The negative-boundary check searches for phrases such as "do not use" and "not for". A skill could state its limits in other words and still be counted as missing them.
-- I used Gemini for a first pass at grouping heading synonyms. I treated the grouping as a suggestion to check against the counts, not as a finding.
+- I also used Gemini for a first pass at grouping heading synonyms. I treated the grouping as a suggestion to check against the counts, not as a finding.
+- The linter's argument check can't fail on these skills. The check looks for parameters declared in frontmatter, and no skill declares any.
+- The negative-boundary check searches each skill's whole file, not just the description that agents use to choose a skill.
 
 ## A proposed SKILL.md skeleton
 
