@@ -1,39 +1,42 @@
 # hello-nvidia
 
-This repo holds my preparation for NVIDIA's Senior Content Engineer, KnowledgeOps role. I asked one question: **how does a newcomer get from nothing to a working Isaac Sim simulation, using only NVIDIA's published agent skills?**
+This repo holds my preparation for NVIDIA's Senior Content Engineer, KnowledgeOps role.
 
-I answered that question in two parts:
+**My goal:** to learn how agent skills and AI agents can help a newcomer experience Isaac Sim for the first time, using only NVIDIA's published skills.
 
-1. **I measured the skills as a content set before using them.** Working with an AI agent (Gemini), I produced short Python scripts that check how the `SKILLS.md` router covers the 44 skills, count every H2 heading, measure the descriptions, and lint the set against agent-facing practices. The agent wrote the code. I decided what to measure, ran the scripts, and checked the results.
-2. **I used the skills the way a newcomer would.** My done test was Isaac Sim running on a Brev cloud GPU, streaming to my laptop's browser, with a robot visibly driving. I logged every point of friction along the way.
+My approach had two steps:
+
+1. **Know the landscape, so I could choose a skill.** Working with an AI agent (Gemini), I produced short Python scripts that check how the `SKILLS.md` router covers the 44 skills, count the H2 headings in every skill, measure the descriptions, and lint the set against agent-facing practices. The agent wrote the code. I decided what to measure, ran the scripts, and checked the results.
+2. **Build.** I used the skills the way a newcomer would. My done test was Isaac Sim running on a Brev cloud GPU, streaming to my laptop's browser, with a robot visibly driving. I logged the friction points I hit along the way.
 
 ![A Jetbot driving in Isaac Sim, streamed to a laptop browser](brev-first-simulation/screenshots/jetbot-closeup.png)
 
-## Each folder answers one part of the question
+## The folders follow the order of the work
 
 | Folder | What you'll find |
 | --- | --- |
-| [brev-first-simulation/](brev-first-simulation/) | The full write-up: every step with why, the command and what happened, the three gaps I found, recommendations, and a 43-entry friction log |
 | [skills-audit/](skills-audit/) | The audit scripts, their output against the `release/6.3` skills, and what the numbers say |
-| [hello-isaac-sim/](hello-isaac-sim/) | A one-page spec for a beginner skill, with done criteria and tests |
-| [human-docs-notes/](human-docs-notes/) | What I noticed in the human-facing docs before I touched the skills |
-| [cheatsheets/](cheatsheets/) | Commands, ports and addresses on one page each |
+| [human-docs-notes/](human-docs-notes/) | First impressions of the human-facing docs, from installing Isaac Sim before I tried the skills |
+| [brev-first-simulation/](brev-first-simulation/) | The full write-up: every step with why, the command and what happened, the three gaps I found, recommendations, and a 43-entry friction log |
 | [tools/](tools/) | The checks that CI runs on this repo |
+| [cheatsheets/](cheatsheets/) | Commands, ports and addresses on one page each |
+| [hello-isaac-sim/](hello-isaac-sim/) | A one-page spec for a beginner skill, with done criteria and tests |
 
-## The skills assume the browser is on the same network as Isaac Sim
+## Where to start: the summary of the Brev write-up
 
-The skills work well for the setup they were built for: a browser on the same machine or the same local network as Isaac Sim. My setup was different, a laptop browser and a cloud GPU, and three gaps got in the way:
+A good place to start is the [summary of the Brev write-up](brev-first-simulation/README.md#summary). The summary covers what I set out to do, what got in the way, and what I'd recommend.
 
-- **The browser couldn't connect.** The web viewer skill uses one network address for two jobs: the address the server listens on, and the address the browser opens. On a cloud machine those have to be different addresses.
-- **Three firewall ports had to be opened.** NVIDIA's Brev documentation says so, but the skill doesn't.
-- **The skills stop once Isaac Sim is on screen.** Driving a robot took a second skill and a restart.
+## Tests, evals and a built skill are next
 
-A small override file fixed the address problem. After that, an agent added a Jetbot and drove the robot, and I confirmed the move twice: from the position data, and with my own eyes in the browser.
+I ran out of time before I could add tests for the scripts, write evals for the skills or build `hello-isaac-sim`. These are important pieces of work, not afterthoughts, and they're what I'd like to do next. The full list, with the reason for each item, is in [TODO.md](TODO.md).
 
-## Tests, evals and a built skill are still to do
+## A lightweight CI check shows the approach
 
-The full list, with the reason for each item, is in [TODO.md](TODO.md). In short: the scripts need tests, `hello-isaac-sim` needs building and evals, two Brev findings need reproducing, and no repeat run has been timed.
+The CI here is small, and meant only to show the approach. Every push runs [tools/check_repo.py](tools/check_repo.py) in GitHub Actions. The check fails if a relative link is broken, if a Python script doesn't compile, or if a real IP address slips into the docs. Addresses in the docs are placeholders such as `<PUBLIC_IP>`.
 
-## CI blocks broken links, broken Python and real IP addresses
+If I took the CI further, these are the steps I'd try next, roughly in this order:
 
-Every push runs [tools/check_repo.py](tools/check_repo.py) in GitHub Actions. The check fails if a relative link is broken, if a Python script doesn't compile, or if a real IP address slips into the docs. Addresses in the docs are placeholders such as `<PUBLIC_IP>`.
+1. Run tests for the audit scripts on every push, so a change to a script can't quietly change the numbers.
+2. Add an automated style check, so the writing rules a team agrees on are checked on every change. Add spelling and external link checks too.
+3. Run the audit scripts against the upstream `skills/` folder on a schedule, and keep each run's results. Over time, the results would show trends, which is the start of a docs-health dashboard.
+4. For skills, run routing and outcome evals whenever a skill changes, so a change is checked against how agents actually use the skill. Change management matters here, and a skill's pull request is one natural place for the evals to hook into the review.

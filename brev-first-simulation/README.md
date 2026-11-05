@@ -4,7 +4,7 @@
 
 I wanted to find out how a newcomer gets started with Isaac Sim using only NVIDIA's published agent skills. So I rented a cloud GPU on Brev, NVIDIA's GPU rental service, and asked an AI agent to set up Isaac Sim and show it in my laptop's browser.
 
-In the end it worked. Isaac Sim ran on the cloud machine and streamed to Chrome on my laptop, and the agent added a small robot and drove it around. Getting there took far longer than it should have, because the skills assume the browser is on the same machine or the same local network as Isaac Sim. A laptop connecting to a cloud machine isn't covered.
+In the end it worked. Isaac Sim ran on the cloud machine and streamed to Chrome on my laptop, and the agent added a small robot and drove it around. Getting there took far longer than I expected, because the skills assume the browser is on the same machine or the same local network as Isaac Sim. A laptop connecting to a cloud machine isn't covered.
 
 **What got in the way:**
 
@@ -40,7 +40,7 @@ The laptop only runs a browser and an editor. The Brev machine has the GPU, and 
 
 ### 1. Search for a machine, then create it (on the laptop)
 
-*Why:* Isaac Sim needs an NVIDIA RTX GPU, which my laptop doesn't have, so I rented one. `brev search` lists the machines you can rent, with prices. The flags narrow the list:
+*Why:* Isaac Sim needs an NVIDIA RTX GPU, which the Linux laptop I used for this doesn't have, so I rented one. `brev search` lists the machines you can rent, with prices. The flags narrow the list:
 
 - `--gpu-name L40S` asks for an L40S, a 48 GB data-centre GPU with RTX.
 - `--min-disk 150` asks for room for the container image and its caches.
@@ -241,7 +241,7 @@ Goal: someone with a laptop and a fresh Brev machine asks once, in plain words, 
 
 - Add a Getting started route to `SKILLS.md`, the file in the skills folder that sends each request to the right skill. Today it has no entry for first-time setup (#2). The new route would send first-run requests to `hello-isaac-sim`.
 - Rename `isaac-sim-remote`, or describe it clearly. It controls a simulation on the same machine, so it isn't "remote" in the cloud sense (#7).
-- Put the realistic cost and time on the first page: the software and NGC key are free, an L40S costs about $2.71 an hour, and the first start takes 15 to 20 minutes.
+- Put the realistic cost and time on the first page: the software and NGC key are free, an L40S costs about $2.71 an hour, and the first start is slow while shaders compile. I didn't time the first start, so the page should give a measured figure.
 
 ## What the skills get right, and why the gaps are still worth fixing
 

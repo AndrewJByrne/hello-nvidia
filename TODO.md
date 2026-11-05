@@ -38,3 +38,10 @@ This repo shows work in progress. Each item says why it matters.
 
 - [ ] **Add more checks to CI.** The checks today cover relative links, Python syntax and stray IP addresses. External links, Markdown style and spelling aren't checked.
 - [ ] **Add a license.** The repo has none yet.
+
+## NVIDIA already uses MCP and llms.txt, and I haven't tried either yet
+
+NVIDIA already publishes both. The Isaac Sim docs describe an [Isaac Sim MCP Server](https://docs.isaacsim.omniverse.nvidia.com/latest/development_tools/isaac_sim_mcp.html) for semantic search, and the `isaac-sim-robot-navigation` skill tells agents what to query in it. The Omniverse docs have an [llms.txt](https://docs.omniverse.nvidia.com/llms.txt), and the [Isaac Lab llms.txt](https://docs.nvidia.com/isaaclab/llms.txt) also points agents to a docs MCP server. I didn't use either during the Brev run.
+
+- [ ] **Run the Brev setup again with the Isaac Sim MCP Server connected.** I'd like to see whether it fills any of the gaps I logged, such as the firewall ports or the address mix-up.
+- [ ] **Learn how the llms.txt files handle versions.** In my first search, I landed on an old install page. The Isaac Lab llms.txt lists its versions and marks a default, and I'd like to understand how that helps an agent pick the current page.

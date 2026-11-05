@@ -8,23 +8,29 @@ A newcomer with an everyday laptop and a fresh Brev L40S machine makes one plain
 
 ## Scope
 
-**In scope:** one setup. A laptop with Chrome (no NVIDIA GPU needed) and a Brev L40S machine on AWS.
+**In scope:** one setup. A laptop with Chrome (no NVIDIA GPU needed) and a Brev L40S machine in the cloud.
 
 **Out of scope:** other clouds, local GPUs and other browsers. Those setups keep using the existing skills.
 
+I didn't have time to try the existing skills on a laptop with its own NVIDIA GPU, so I can't say how well they cover that setup.
+
 ## Why each step exists
 
-Every step answers a problem I hit in the [Brev write-up](../brev-first-simulation/). Numbers like #16 point to that write-up's friction log.
+Every step answers a problem I hit in the [Brev write-up](../brev-first-simulation/). References such as (#16) are entries in the friction log at the end of that write-up.
 
 | Step | Problem it solves | What the skill does |
 | --- | --- | --- |
 | 1. Pick the setup | The existing skills cover a browser on the same machine or network, not a laptop with a cloud machine. | Checks that the skill is running on Brev, and stops with a clear message if not. |
-| 2. Open the ports | The firewall ports aren't mentioned anywhere in the skills. | Shows the three ports to open for the user's own IP, and waits until they're open. |
+| 2. Open the ports | I didn't find the firewall ports mentioned in the skills I used. | Shows the three ports to open for the user's own IP, and waits until they're open. |
 | 3. Check prerequisites | On a fresh machine, `acl` is missing and the preflight GPU check fails. The NGC login and license steps come up mid-way (#16, #17). | Checks the GPU, Docker, `acl`, NGC login and license acceptance before starting anything. |
 | 4. Start Isaac Sim | One address can't do two jobs, and the viewer doesn't start the control server. | Starts Isaac Sim with separate listen and browser addresses, with the control server already on. |
 | 5. Show a demo | The skills stop once Isaac Sim is on screen. | Adds a ground plane and a Jetbot, and drives the Jetbot. |
 | 6. Check the demo worked | The agent can't see the stream, and said so. | Reads the robot's position, then asks the user to confirm they can see the robot moving. |
 | 7. Point onward | Nothing suggests what to try after a first demo. | Suggests next skills: navigation, sensors, synthetic data. |
+
+## Where the skill fits: the first stop on a getting-started route
+
+The `SKILLS.md` router could offer a getting-started route that begins with `hello-isaac-sim` and continues with the next skills from step 7, such as `isaac-sim-robot-navigation` and `isaac-sim-sensor`. That might give a newcomer a clearer path onward from a first demo.
 
 ## Done means all of these pass
 

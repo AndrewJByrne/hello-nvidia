@@ -28,7 +28,7 @@ The output in [results/](results/) comes from `release/6.3` at commit `fcf16e4`.
 
 **Coverage.** The router links all 44 skills ([results](results/router_coverage.txt)). Three skills appear in two routes: `isaac-sim-orchestrator`, `isaac-sim-troubleshooting` and `isaac-sim-validator`.
 
-**Structure.** A census of every H2 heading ([results](results/check_headers.txt)) shows four near-universal headings:
+**Structure.** I counted how many skills use each H2 heading ([results](results/check_headers.txt)). Four headings appear in almost every skill, at 95% or more. Three more appear in between a quarter and three quarters of the skills:
 
 | Heading | Share of skills |
 | --- | --- |
@@ -40,28 +40,28 @@ The output in [results/](results/) comes from `release/6.3` at commit `fcf16e4`.
 | Available Scripts | 65.9% |
 | Workflow | 27.3% |
 
-After those, the headings fragment. Some differ only in casing, such as "Related skills" and "Related Skills". Five different headings all mean "when to use this skill". The census points to a standard SKILL.md template, which I sketch below.
+Below those seven, the headings scatter. Some differ only in casing, such as "Related skills" and "Related Skills". Five different headings all mean "when to use this skill". The counts point to a shared SKILL.md template, which I sketch below.
 
-**Agent-facing quality.** An agent keeps every skill's description in context while choosing a skill, so descriptions matter more than body text for routing.
+**Agent-facing quality.** An agent keeps every skill's description in context while choosing a skill, so descriptions probably matter most when an agent picks a skill.
 
 - All 44 descriptions fit within the 1,024-character limit. The longest is 334 characters, for `isaac-sim-assets` ([results](results/check_desc_lengths.txt)).
-- 21 of 44 skills never say what they should *not* be used for. A "don't use this for" line helps an agent avoid picking the wrong skill ([results](results/audit_skills_linter.txt)).
-- Two pairs of skills have heavily overlapping descriptions: `generate-incident-config` with `run-incident-events`, and `navigation-primitives` with `occupancy-map`. Overlap like that can confuse an agent choosing between them.
+- 21 of 44 skills don't say what they should *not* be used for. A "don't use this for" line helps an agent avoid picking the wrong skill ([results](results/audit_skills_linter.txt)).
+- Two pairs of skills share many description keywords: `generate-incident-config` with `run-incident-events`, and `navigation-primitives` with `occupancy-map`. Overlap like that may confuse an agent choosing between them.
 
-**Open questions.** I couldn't find evals for the skills. There's also no audience level, so nothing marks a skill as beginner or advanced, and nothing says where a newcomer should start.
+**Open questions.** I didn't find evals for the skills in the `skills/` folder, though I didn't search everywhere they might live. I also didn't see a way to mark a skill as beginner or advanced, or a pointer to where a newcomer should start. Both may exist in places I didn't look.
 
 ## How far to trust these numbers
 
-- The counts come from the scripts, and anyone can rerun them.
+- The counts come from the scripts, and you can rerun them with the commands above.
 - The linter's thresholds are starting points, not standards. The 20-skill soft cap is a rule of thumb. The six-shared-keywords collision threshold has not been tuned.
 - The negative-boundary check searches for phrases such as "do not use" and "not for". A skill could state its limits in other words and still be counted as missing them.
 - I also used Gemini for a first pass at grouping heading synonyms. I treated the grouping as a suggestion to check against the counts, not as a finding.
 - The linter's argument check can't fail on these skills. The check looks for parameters declared in frontmatter, and no skill declares any.
 - The negative-boundary check searches each skill's whole file, not just the description that agents use to choose a skill.
 
-## A proposed SKILL.md skeleton
+## One way to make the skills consistent: a SKILL.md template
 
-Built from the heading census. The comments say which existing headings each section would absorb.
+This is one way I might approach consistency: a shared template, built from the heading counts above. The comments say which existing headings each section would absorb.
 
 ```markdown
 ## Purpose
