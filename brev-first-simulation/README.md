@@ -243,9 +243,9 @@ Goal: someone with a laptop and a fresh Brev machine asks once, in plain words, 
 - Rename `isaac-sim-remote`, or describe it clearly. It controls a simulation on the same machine, so it isn't "remote" in the cloud sense (#7).
 - Put the realistic cost and time on the first page: the software and NGC key are free, an L40S costs about $2.71 an hour, and the first start takes 15 to 20 minutes.
 
-## Keeping the criticism fair
+## What the skills get right, and why the gaps are still worth fixing
 
-This section balances the criticism earlier in the doc. It covers what the skills get right, my guesses at why the gap exists, and why it's still worth fixing.
+This section puts the gaps found earlier in proportion. It covers what the skills get right, my guesses at why the gap exists, and why the gap is still worth fixing.
 
 The skills work well for the setup they assume: a browser on the same machine as Isaac Sim, or on the same local network. The launch script's help text says so. The gap is that this leaves out the setup I had: an everyday laptop with no NVIDIA GPU, a rented cloud GPU, and Isaac Sim viewed in a browser.
 
